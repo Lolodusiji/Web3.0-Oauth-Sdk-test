@@ -18,7 +18,7 @@
 .tweets {
   display: flex;
   flex-flow: row;
-  justify-content: center;
+  justify-content: baseline;
   font-size: 15px;
   width: 100%;
   line-height: 1.75rem;
@@ -35,6 +35,7 @@
   color: rgb(48, 52, 56);
   font-weight: 400;
   line-height: 1.5;
+  text-align: start;
 }
 .user-content a {
   color: rgb(27, 149, 224);
@@ -45,6 +46,7 @@
   flex-flow: column nowrap;
   align-items: baseline;
   color: rgb(20, 23, 26);
+  max-width: 500px;
 }
 
 .user-content-box .user-names {

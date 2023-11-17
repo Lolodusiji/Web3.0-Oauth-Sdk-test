@@ -2,19 +2,16 @@ import React, {useState} from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate instead of useHistory
 import Chain from "../../public/chain.png";
 import "./SDK_Form.css";
+import NFT from "../../public/future traders.jpg";
+
 
 const SDK_Form = () => {
   const navigate = useNavigate(); 
-  const [textareaValue , setTextareaValue] = useState('');
 
   const handleClick = () => {
-    navigate("/Component/SDK_Test.jsx", { state: { textareaValue } });
+    //  console.log("Textarea Value:", textareaValue);
+    navigate("/Component/SDK_Test.jsx");
   };
-
-  const handleTextareaChange = (event) => {
-    setTextareaValue(event.target.value);
-  };
-
 
   return (
     <div>
@@ -22,9 +19,22 @@ const SDK_Form = () => {
         <div className="left_side">
           <img src={Chain} alt="" />
         </div>
-        <div className="right_side">
+        {/* <div className="right_side">
           <textarea id="myTextarea" value={textareaValue} onChange={handleTextareaChange} placeholder="Prompt here..." />
-          <button onClick={handleClick}>Submit</button>
+          <button onClick={handleClick}>Submit</button> */}
+
+        <div className="post-tweet">
+          <form action="">
+            <div className="form">
+              <img src={NFT} alt="user1" />
+              <textarea
+                placeholder="What is happening..."
+              />
+            </div>
+            <button type="submit" onClick={handleClick}>
+              Tweet
+            </button>
+          </form>
         </div>
       </div>
     </div>
