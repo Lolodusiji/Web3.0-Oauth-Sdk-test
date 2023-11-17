@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  /* background: url(./Colored\ Shapes\ 2.svg); */
+    width: 100%;
+    margin: auto;
+    background-color: bisque;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    overflow: hidden;
+}
+
+.left_side{
+    width: 40%;
+}
+
+.left_side > img{
+    width: 80%;
+}
+
+.right_side{
+    width: 50%;
+}
+
+.right_side > textarea{
+    width: 90%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    height: 150px; 
+    resize: none;
+    outline: none;
+    border: 1px solid #e6dede;
+}
+
+.right_side > button{
+     width: 90%;
+    margin: auto;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    margin-top: .5rem;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 7px 25px;
+    color: #fff;
+    background-image: linear-gradient(315deg, #833ab4 0%, #9e05e9 50%, #fcb045);
+}
