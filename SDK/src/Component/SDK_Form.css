@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background: linear-gradient(92deg, #9327FF 1.06%, #FFA927 100%);;
+}
+
 .container{
-  /* background: url(./Colored\ Shapes\ 2.svg); */
     width: 100%;
     margin: auto;
     background-color: bisque;
@@ -14,6 +17,7 @@
     align-items: center;
     justify-self: center;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .left_side{

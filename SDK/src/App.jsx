@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<SDK_Form />} />
-        <Route path="/signin" element={<SDK_Test />} />
+        <Route path="/Component/SDK_Test.jsx" element={<SDK_Test />} />
       </Routes>
     </Router>
   );
